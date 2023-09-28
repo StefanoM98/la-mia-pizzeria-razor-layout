@@ -11,22 +11,25 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+            <div class="container-fluid bg-dark">
+                <a class="d-flex justify-content-center" href="https://www.turismo360.it/cittadiacri/bella-napoli-pizzeria-a-taglio/">
+                    <img class="w-50" src="~/img/bella_napoli.jpg" />
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-flex collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/Home/Userindex">HomePage</a>
+                        <li class="nav-item btn-primary p-2 m-3">
+                            <a class="nav-link active text-black" aria-current="page" href="/Home/Userindex">HomePage</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/Home">Vai alle pizze</a>
+                        <li class="nav-item btn-primary p-2 m-3">
+                            <a class="nav-link text-black" href="/Home">Admin</a>
                         </li>
 
                     </ul>
+                    
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca">
                         <button class="btn btn-outline-success" type="submit">Cerca la pizza</button>
@@ -41,12 +44,8 @@
         </main>
     </div>
 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 bg-black">
         <p class="col-md-4 mb-0 text-muted">© 2023 Pizzeria Bella Napoli, Inc</p>
-
-        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-            <img src="~/img/bella_napoli.jpg" />
-        </a>
 
         <ul class="nav col-md-4 justify-content-end">
             <li class="nav-item"><a href="/Home/Index" class="nav-link px-2 text-muted">Home</a></li>
