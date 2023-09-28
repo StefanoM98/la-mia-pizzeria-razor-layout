@@ -10,22 +10,27 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">la_mia_pizzeria_static</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link active" aria-current="page" href="/Home/Userindex">HomePage</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link" href="/Home">Vai alle pizze</a>
                         </li>
+
                     </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Cerca">
+                        <button class="btn btn-outline-success" type="submit">Cerca la pizza</button>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -36,10 +41,20 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - la_mia_pizzeria_static - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-muted">© 2023 Pizzeria Bella Napoli, Inc</p>
+
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img src="~/img/bella_napoli.jpg" />
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="/Home/Index" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="/Home/Index" class="nav-link px-2 text-muted">Pizzeria Bella Napoli</a></li>
+            <li class="nav-item"><a href="/Home/Index" class="nav-link px-2 text-muted">I nostri prezzi</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Domande</a></li>
+            <li class="nav-item"><a href="https://www.linkedin.com/in/stefanom98/" class="nav-link px-2 text-muted">Chi siamo</a></li>
+        </ul>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
